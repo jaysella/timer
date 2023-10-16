@@ -40,7 +40,7 @@ export default function Timer({ initialSeconds }: { initialSeconds: number }) {
     <div className="max-w-md p-8 mx-auto text-center text-white bg-gray-800 rounded-lg shadow-xl">
       {isFinished && (
         <div className="text-xl font-bold mb-6 bg-sky-600 p-0.5 rounded-md uppercase">
-          Time's up!
+          Time&apos;s up!
         </div>
       )}
 
