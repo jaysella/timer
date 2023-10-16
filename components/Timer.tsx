@@ -37,7 +37,7 @@ export default function Timer({ initialSeconds }: { initialSeconds: number }) {
   const formattedTime = `${formattedSeconds}:${formattedMinutes}`;
 
   return (
-    <div className="max-w-md mx-auto bg-gray-800 text-white rounded-lg shadow-xl text-center p-8">
+    <div className="max-w-md p-8 mx-auto text-center text-white bg-gray-800 rounded-lg shadow-xl">
       {isFinished && (
         <div className="text-xl font-bold mb-6 bg-sky-600 p-0.5 rounded-md uppercase">
           Time's up!
@@ -69,7 +69,7 @@ export default function Timer({ initialSeconds }: { initialSeconds: number }) {
         ) : null}
         <button
           onClick={handleCancel}
-          className="w-full inline-flex justify-center px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus:outline-none transition-colors"
+          className="inline-flex justify-center w-full px-6 py-2 text-white transition-colors bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none"
         >
           <RotateCcwIcon />
         </button>
